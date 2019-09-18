@@ -14,9 +14,9 @@ namespace Spaceship
     }
     class Fightership : Spaceship
     {
-        int ammo;
-        int maxAmmo;
-        int guns;
+        private int ammo;
+        private int maxAmmo;
+        private int guns;
 
         public Fightership()
             : base()

@@ -4,7 +4,40 @@ using System.Text;
 
 namespace Spaceship
 {
-    class Fightership
+    struct Fighter
     {
+        public string name;
+        public int health;
+        public int fuel;
+        public int ammo;
+        public int guns;
+    }
+    class Fightership : Spaceship
+    {
+        int ammo;
+        int maxAmmo;
+        int guns;
+
+        public Fightership()
+            : base()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Fightership(ref Fighter fighter)
+            : base(fighter.name, fighter.health, fighter.fuel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Shoot()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reload(int ammo)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

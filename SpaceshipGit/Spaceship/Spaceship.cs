@@ -18,7 +18,7 @@ namespace Spaceship
             throw new NotImplementedException();
         }
 
-        public Spaceship(string name, int health, int fuel, bool isAlive)
+        public Spaceship(string name, int health, int fuel)
         {
             throw new NotImplementedException();
         }

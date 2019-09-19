@@ -28,7 +28,17 @@ namespace Spaceship
             throw new NotImplementedException();
         }
 
+        public void Refuel(int fuel)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Move()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Repair(int repairValue)
         {
             throw new NotImplementedException();
         }

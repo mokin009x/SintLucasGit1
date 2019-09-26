@@ -24,12 +24,12 @@ namespace Spaceship
             throw new NotImplementedException();
         }
 
-        public Spaceship(string _name, int _health, int _fuel)
+        public Spaceship(string name, int health, int fuel)
         {
-            name = _name;
-            health = _health;
+            this.name = name;
+            this.health = health;
             maxHealth = health;
-            fuel = _fuel;
+            this.fuel = fuel;
             maxFuel = fuel;
             isAlive = true;
             throw new NotImplementedException();
@@ -37,12 +37,22 @@ namespace Spaceship
 
         public void Hit(int damage)
         {
-            health = health - damage;
+            
+            if (health - damage <= 0)
+            {
+                isAlive = false;
+            }
+            else
+            {
+                health = health - damage;
+            }
+           
             throw new NotImplementedException();
         }
 
         public void Refuel(int fuel)
         {
+
             throw new NotImplementedException();
         }
 

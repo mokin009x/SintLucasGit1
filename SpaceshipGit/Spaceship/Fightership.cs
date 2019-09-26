@@ -18,10 +18,14 @@ namespace Spaceship
         private int maxAmmo;
         private int guns;
 
+        
+
         public Fightership()
             : base()
         {
-            throw new NotImplementedException();
+            ammo = 5;
+            maxAmmo = 15;
+            guns = 1;
         }
 
         public Fightership(ref Fighter fighter)

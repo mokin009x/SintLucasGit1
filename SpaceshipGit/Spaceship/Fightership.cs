@@ -31,7 +31,11 @@ namespace Spaceship
         public Fightership(ref Fighter fighter)
             : base(fighter.name, fighter.health, fighter.fuel)
         {
-            throw new NotImplementedException();
+            Fighter f = new Fighter();
+            f.name = "Weirdoo";
+            f.health = 20;
+            f.fuel = 100;
+            Fightership f1 = new Fightership(ref f);
         }
 
         public int Shoot()

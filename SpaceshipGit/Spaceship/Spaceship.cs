@@ -44,7 +44,7 @@ namespace Spaceship
             }
             else
             {
-                health = health - damage;
+                health =- damage;
             }
            
             throw new NotImplementedException();
@@ -52,7 +52,11 @@ namespace Spaceship
 
         public void Refuel(int fuel)
         {
+            if (this.fuel < maxFuel)
+            {
+                this.fuel += fuel;
 
+            }
             throw new NotImplementedException();
         }
 

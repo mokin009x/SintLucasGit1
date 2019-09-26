@@ -6,6 +6,7 @@ namespace Spaceship
 {
     abstract class Spaceship
     {
+        
         protected string name;
         protected int health;
         protected int maxHealth;
@@ -62,9 +63,14 @@ namespace Spaceship
 
         public void Move()
         {
+            if (fuel > 0)
+            {
+                fuel = fuel - 2;
+            }
+          
             throw new NotImplementedException();
         }
-
+       
         public void Repair(int repairValue)
         {
             throw new NotImplementedException();
